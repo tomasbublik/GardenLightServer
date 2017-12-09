@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "./node_modules/.bin/nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
     "build": "./node_modules/.bin/babel src -s -D -d dist --presets es2015,stage-0",
+    "build-dev": "./node_modules/.bin/babel src -s -D -d dist --presets es2015,stage-0 --source-maps",
     "start": "node dist",
     "test": "./node_modules/.bin/mocha test --compilers js:babel-core/register --require babel-polyfill test/chai.js"
   },
